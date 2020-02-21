@@ -17,3 +17,11 @@ SELECT * FROM Carro;
 
 DELETE FROM Carro WHERE Id in (SELECT Id FROM Carro WHERE IdPessoa = 2)
 DELETE FROM Pessoa WHERE Id = 2;
+
+SELECT * 
+FROM 
+	Pessoa p
+	INNER JOIN Carro c
+		ON p.Id = c.IdPessoa
+WHERE
+	p.Name = 'Felipe'
