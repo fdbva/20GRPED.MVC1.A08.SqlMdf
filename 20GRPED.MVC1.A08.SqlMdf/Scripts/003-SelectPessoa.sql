@@ -1,0 +1,1 @@
+﻿SELECT Id, Name as Nome FROM Pessoa WHERE Id = 2;
